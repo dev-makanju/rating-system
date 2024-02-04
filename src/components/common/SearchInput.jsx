@@ -2,15 +2,19 @@ import * as React from 'react';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
-import Next from '../'
+import Link from 'next/link';
 
 export default function FreeSolo() {
-  return (
+   const handleChange = () => {
+     console.log('hello')
+   }
+   return (
     <Stack className="bg-[#fff] rounded-lg" spacing={1} sx={{ width: 300 }}>
       <Autocomplete
         freeSolo
         id="free-solo-2-demo"
         disableClearable
+        onChange={handleChange}
         options={top100Films.map((option) => option.title)}
         renderInput={(params) => (
           <TextField

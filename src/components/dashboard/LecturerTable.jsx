@@ -35,7 +35,7 @@ const LecturerTable = () => {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Name</TableCell>
+            <TableCell>Name of lecturers</TableCell>
             <TableCell align="right">Total review</TableCell>
             <TableCell align="right">Overall score&nbsp;</TableCell>
             <TableCell align="right">Action&nbsp;</TableCell>

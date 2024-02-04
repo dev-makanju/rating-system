@@ -14,6 +14,7 @@ import Stack from '@mui/material/Stack';
 import { usePathname , useSearchParams } from 'next/navigation'
 import avater from '../assets/pdav.jpeg'
 import SearhInput from '../components/common/SearchInput'
+import Link from 'next/link';
 
 const Mainlayout = (props) => {
   const Search = styled('div')(({ theme }) => ({
@@ -78,8 +79,9 @@ const Mainlayout = (props) => {
             >
               RATING 
             </Typography>
-            <div>
+            <div className="flex  items-center gap-2">
               <SearhInput></SearhInput>
+              <Link className="font-bold" href="/auth/login">Sign In</Link>
             </div>
           </Toolbar>
         </AppBar>
