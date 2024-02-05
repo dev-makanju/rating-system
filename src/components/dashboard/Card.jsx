@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const CardUI = (props) => {
    return (
-      <Card className="sm:h-[350px]">
+      <Card className="sm:h-[370px]">
          <div className="bg-[#833ce7] flex justify-center items-center font-bold h-[110px] w-full">
             <h1 className='text-white text-3xl md:text-5xl'>{props.courseItem.course_code}</h1>
          </div>
