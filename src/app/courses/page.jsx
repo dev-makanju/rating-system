@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Layout from '../../components/Layout';
 import CardUI from '../../components/dashboard/Card';
