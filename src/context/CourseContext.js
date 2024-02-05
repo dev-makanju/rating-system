@@ -57,35 +57,35 @@ export const CourseProvider = ({children}) => {
          {
             id:'1',
             course_code: 'CSC 405',
-            course_desc: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            course_desc: "Master the principles of system development, from requirements gathering to deployment, ensuring efficient and scalable software solutions.",
             lecturer_name:'Dr Kolade',
             rating:3.5
          },
          {
             id:'2',
             course_code: 'CSC 407',
-            course_desc: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            course_desc: "Explore the intricate world of information systems, covering databases, networks, and business processes for effective data management.",
             lecturer_name:'Mr Adeoye',
             rating:4.5
          },
          {
             id:'3',
             course_code: 'CSC 401',
-            course_desc: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            course_desc: "Immerse yourself in the realm of Artificial Intelligence, delving into machine learning, neural networks, and intelligent systems for advanced problem-solving.",
             lecturer_name:'Mrs Folashade',
             rating:2
          },
          {
             id:'4',
             course_code: 'CSC 415',
-            course_desc: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            course_desc: " Learn database design, data warehousing, and data governance for effective and secure information storage and retrieval",
             lecturer_name:'Mr Majekodunmi',
             rating:3.5
          },
          {
             id:'5',
             course_code: 'CSC 408',
-            course_desc: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+            course_desc: "This course teaches hardware and software, artificial intelligence, and control systems to design and build intelligent robots for various applications",
             lecturer_name:'Mr Makanju',
             rating:1
          }
