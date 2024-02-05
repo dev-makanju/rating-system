@@ -79,7 +79,7 @@ export default function BasicModal(props) {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style} maxRows={3} className="bg-white w-[250px] md:w-[400px]">
+        <Box sx={style} maxrows={3} className="bg-white w-[250px] md:w-[400px]">
         <div className='flex flex-col md:gap-4'>
         <div>
           <h3 className="text-[#000000bf] text-sm mb-2 font-bold">Review:</h3>

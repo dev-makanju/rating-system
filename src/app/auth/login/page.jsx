@@ -4,12 +4,16 @@ import AuthLayout from '@/components/AuthLayout';
 import Input from '../../../components/common/Input';
 import { FormControl } from '@mui/base/FormControl';
 import Link from 'next/link';
-
+import { useRouter } from 'next/navigation';
+import { useCourse } from '@/context/CourseContext';
 
 const LoginPage = () => {
+  const router = useRouter();
+  const course = useCourse();
   const [input , setInput] = useState({})
   const handleInput = () => {
-    console.log('hello')
+    course.setUser(true);
+    router.push('/')
   }
   return (
     <AuthLayout>

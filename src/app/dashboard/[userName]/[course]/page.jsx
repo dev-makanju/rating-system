@@ -8,16 +8,6 @@ import { useParams } from 'next/navigation';
 import {useCourse} from '../../../../context/CourseContext'
 
 const SingleCourse = () => {
-  const [data , setData] = useState(null)
-  const course = useCourse()
-  const params = useParams()
-
-  // useEffect(() => {
-  //   const single_course = course.courses.review.filter((items) => items.id === params.course) 
-  //   setData(single_course[0]);
-  // },[data])
-  // const dataItem = data;
-  
   return (
     <Layout>
       <h1 className="text-[#000000bf] text-3xl mb-3">Lecturer’s Review</h1>

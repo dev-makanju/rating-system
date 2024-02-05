@@ -12,11 +12,10 @@ const UserPage = () => {
       gridGap: '1em',
    }
 
- 
   return (
      <Layout className="pb-5">
          <h1 className='mb-4 text-[#000000bf] font-bold text-2xl md:text-3xl'>Lecturer&prime;s &nbsp; rating</h1>
-         <div style={parentCard} class="h-full">
+         <div style={parentCard} className="h-full">
             {course.courses.courseData.map(course => (
                <CardUI key={course.id} courseItem={course}/>
             ))}
@@ -28,4 +27,4 @@ const UserPage = () => {
   )
 }
 
-export default UserPage
+export default UserPage;

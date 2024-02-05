@@ -8,13 +8,12 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import { usePathname , useSearchParams } from 'next/navigation'
 import avater from '../assets/pdav.jpeg'
 import SearhInput from '../components/common/SearchInput'
 import Link from 'next/link';
+import { useCourse } from '@/context/CourseContext';
 
 const Mainlayout = (props) => {
   const Search = styled('div')(({ theme }) => ({
@@ -53,9 +52,7 @@ const Mainlayout = (props) => {
       },
     },
   }))
-  useEffect(() => {
-    console.log(props.isActive)
-  })
+  const user = useCourse();
   
   return (
     <div> 
@@ -87,13 +84,13 @@ const Mainlayout = (props) => {
         </AppBar>
       </Box>
       <div className="flex flex-col md:flex-row gap-4 m-auto mt-8  mr-[1rem] ml-[1rem] md:mr-[2rem] md:ml-[2rem]">
-        {props.isActive && 
+        {user.user && 
           <div className='mt-[3rem]'>
            <div className="flex flex-col justify-center items-center border-2 border-gray-100 rounded-md md:max-w-[400px] p-10">
              <Stack direction="row" spacing={2}>
                <Avatar
                  alt="Remy Sharp"
-                 src={avater}
+                 src=''
                  sx={{ width: 150, height: 150 }}
                />
              </Stack>
