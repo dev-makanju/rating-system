@@ -1,10 +1,10 @@
 'use client'
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 const CourseContext = createContext();
 
 export const CourseProvider = ({children}) => {
-   const [user, setUser] = useState(false);
+   const [user, setUser] = useState(null);
    const [courses, setCourses] = useState({
       review: [
          {
@@ -59,35 +59,35 @@ export const CourseProvider = ({children}) => {
             course_code: 'CSC 405',
             course_desc: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
             lecturer_name:'Dr Kolade',
-            rating:'3.5'
+            rating:3.5
          },
          {
             id:'2',
             course_code: 'CSC 407',
             course_desc: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
             lecturer_name:'Mr Adeoye',
-            rating:'4.5'
+            rating:4.5
          },
          {
             id:'3',
             course_code: 'CSC 401',
             course_desc: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
             lecturer_name:'Mrs Folashade',
-            rating:'2'
+            rating:2
          },
          {
             id:'4',
             course_code: 'CSC 415',
             course_desc: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
             lecturer_name:'Mr Majekodunmi',
-            rating:'3.5'
+            rating:3.5
          },
          {
             id:'5',
             course_code: 'CSC 408',
             course_desc: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
             lecturer_name:'Mr Makanju',
-            rating:'1'
+            rating:1
          }
       ],
    })
